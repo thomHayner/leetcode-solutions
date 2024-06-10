@@ -4,16 +4,9 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    if (nums.length === 2 ) {
-        return [0,1]
-    }
-    for (let i = 0; i < nums.length; i++) {
-        // if (i <= target) {
-            for ( j = i+1; j < nums.length; j++) {
-                if (nums[j]+nums[i] === target) {
-                    return [i,j]
-                }
-            }
-        // }
-    }
+        let trues = [...nums].map((n,i,a) => a.includes(target-n)?[n,i]:[]).filter(n => n.length === 2)
+        return trues.length === 2 ?
+                trues.map((n,i,a) => n[1])
+            :
+                trues.filter(n => n[0] !== (target/2)).map((n,i,a) => n[1])
 };
