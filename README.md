@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-This is a repo of my LeetCode solutions. It is set to automatically sync with the LeetCode.com web application at 10:45 PM every day.
+This is a repo of my LeetCode solutions. It is set to automatically sync with the LeetCode.com web application at 10:45 PM UTC every day.
 
 [![Sync Leetcode](https://github.com/thomHayner/leetcode-solutions/actions/workflows/sync_leetcode.yml/badge.svg)](https://github.com/thomHayner/leetcode/actions/workflows/sync_leetcode.yml)
 
