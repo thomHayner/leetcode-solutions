@@ -2,7 +2,7 @@
 
 This is a repo of my LeetCode solutions. It is set to automatically sync with the LeetCode.com web application at 10:45 PM UTC every day.
 
-[![Sync Leetcode](https://github.com/thomHayner/leetcode-solutions/actions/workflows/sync_leetcode.yml/badge.svg)](https://github.com/thomHayner/leetcode/actions/workflows/sync_leetcode.yml)
+[![Sync Leetcode](https://github.com/thomHayner/leetcode-solutions/actions/workflows/sync_leetcode.yml/badge.svg)](https://github.com/thomHayner/leetcode-solutions/actions/workflows/sync_leetcode.yml)
 
 ## Automations
 This repo uses the LeetCode Sync action from [@joshcai](https://github.com/joshcai), available on the GitHub Marketplace [here](https://github.com/marketplace/actions/leetcode-sync).
