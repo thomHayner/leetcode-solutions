@@ -5,9 +5,19 @@ This is a repo of my LeetCode solutions. It is set to automatically sync with th
 [![Sync Leetcode](https://github.com/thomHayner/leetcode-solutions/actions/workflows/sync_leetcode.yml/badge.svg)](https://github.com/thomHayner/leetcode-solutions/actions/workflows/sync_leetcode.yml)
 
 ## Automations
+
 This repo uses the LeetCode Sync action from [@joshcai](https://github.com/joshcai), available on the GitHub Marketplace [here](https://github.com/marketplace/actions/leetcode-sync).
 
 More information on this workflow, and how to set one up for yourself, can be found in the original repo's README.md file, located [here](https://github.com/joshcai/leetcode-sync/blob/master/README.md).
+
+### Caveats
+
+After about 1 week, your LEETCODE_SESSION cookie will expire and LeetCode will automatically logs you...this leads to the the sync action failing with the following error code: 
+```TypeError: response.data.data.submissionList.submissions is not iterable```
+
+You will need to log back into LeetCode and use the Chrome Page Inspector to find your new LEETCODE_SESSION, then update your GitHub Actions Secrets with the new LEETCODE_SESSION cookie.
+
+This issue has already been documented in the original workflow's issues page, [here](https://github.com/joshcai/leetcode-sync/issues/60).
 
 ## Setup Help and Troubleshooting
 
